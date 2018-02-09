@@ -23,14 +23,12 @@
 	<img class="img" src="img/banner.jpg">
 </div>
 <div class="col-md-5">
-			<form >
-		<input class="form-control" type="search" name="busca" placeholder="Pesquisa">
-       
-    </form>
-
+			<form method="POST" action="busca.php" >
+		<input class="form-control" type="search" name="chave" placeholder="Pesquisa">    
 </div>
 <div class="col-md-1">
-	<button type="submit" class="btn btn-secondary my-2 my-sm-0">Pesquisar</button>
+	<button class="btn btn-secondary my-2 my-sm-0">Pesquisar</button>
+     </form>
 </div>
 <div class="col-md-3">
 	<a class="btn btn-info" href="cadastro.php">Cadastre-se aqui</a>
@@ -43,7 +41,7 @@
 
 <div class="container">
 <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-  <a class="navbar-brand" href="index.php">Homer</a>
+  <a class="navbar-brand" href="index.php">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -54,17 +52,17 @@
         <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="celular.php">Celulares</a></li>
+        <a class="nav-link" href="categoria.php?cat=celular">Celulares</a></li>
          <li class="nav-item">
-         <a class="nav-link" href="roupa.php">Roupas</a></li>
+         <a class="nav-link" href="categoria.php?cat=roupa">Roupas</a></li>
           <li class="nav-item">
-          <a class="nav-link" href="eletronico.php">Eletrônicos</a></li>
+          <a class="nav-link" href="categoria.php?cat=eletronico">Eletrônicos</a></li>
            <li class="nav-item">
-           <a class="nav-link" href="game.php">Games</a></li>
+           <a class="nav-link" href="categoria.php?cat=game">Games</a></li>
             <li class="nav-item">
-           <a class="nav-link" href="livro.php">Livros</a></li>
+           <a class="nav-link" href="categoria.php?cat=livro">Livros</a></li>
       <li class="nav-item">
-           <a class="nav-link" href="info.php">Informatica</a>
+           <a class="nav-link" href="categoria.php?cat=informatica">Informática</a>
       </li>
       </ul>
       </div>

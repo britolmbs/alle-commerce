@@ -43,11 +43,11 @@ include "conexao.php";
     <span class="sr-only">Proximo</span>
   </a>
 </div>
-</div>
+
 
 <!--fim carrocel-->
 
-
+<div class="row">
 
  
  <?php 
@@ -61,12 +61,13 @@ if($result->num_rows>0){
 
 <p>&nbsp;</p>
 <div class="card col-md-3">
-  <img class="card-img-top" src="img/produtos/<?php echo $row['foto']; ?>" alt="Card image cap">
+  <img class="produto card-img-top" src="img/produtos/<?php echo $row['foto']; ?>" alt="Card image cap"></p>
   <div class="card-body">
     <h5 class="card-title"><?php echo $row['nome']; ?></h5>
     <p class="card-text h6">R$: <?php echo $row['preco']; ?></p>
-    <a href="produto.php?id=<?php echo $row['id'];?>" class="btn btn-dark">Ver mais</a>
+    <a href="produto.php?id=<?php echo $row['id'];?>" class="btn btn-secondary">Ver mais</a>
     </div>
+  </div>
   </div>
 
 

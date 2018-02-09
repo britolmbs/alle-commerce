@@ -7,7 +7,7 @@ include "header.php";
 <p>&nbsp;</p>
  <p class="h3 text-center">Login</p><hr />
 
- 	 <form method="POST" action="resposta.php">
+ 	 <form method="POST" action="perfil.php">
       <div class="form-group">
       <label for="email">Email: </label>
       <input type="email" name="email" class="form-control form-control-lg" />
