@@ -1,7 +1,14 @@
-header{
-	background-color: #1E90FF;
+.header{
+	background-color: #F0F8FF;
 }
 .img{
 	width: 173px;
 	height: 40px;
+}
+.footer{
+	background-color: #F0F8FF;
+}
+.banner{
+	width: 1360px;
+	height: 444px;
 }
