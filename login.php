@@ -5,6 +5,7 @@ include "header.php";
  <section>
  <div class="container">
 <p>&nbsp;</p>
+<?php session_start(); ?>
  <p class="h3 text-center">Login</p><hr />
 
  	 <form method="POST" action="perfil.php">

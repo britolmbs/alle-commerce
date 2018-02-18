@@ -1,6 +1,7 @@
 <?php 
 include "header.php";
 include "conexao.php";
+session_start();
 ?>
  <section>
 

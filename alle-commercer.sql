@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 09-Fev-2018 às 14:01
+-- Generation Time: 18-Fev-2018 às 13:18
 -- Versão do servidor: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `alle-commerce`
+-- Database: `alle-commercer`
 --
 
 -- --------------------------------------------------------
@@ -53,7 +53,8 @@ CREATE TABLE `produto` (
   `preco` varchar(255) COLLATE utf8_bin NOT NULL,
   `descricao` text COLLATE utf8_bin NOT NULL,
   `categoria` varchar(255) COLLATE utf8_bin NOT NULL,
-  `chave` varchar(255) COLLATE utf8_bin NOT NULL
+  `chave` varchar(255) COLLATE utf8_bin NOT NULL,
+  `foto` varchar(255) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
