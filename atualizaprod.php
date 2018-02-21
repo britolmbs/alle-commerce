@@ -3,8 +3,6 @@ include"header.php";
  ?>
 
 
-
-
     <div class="container">
 		<section>
 		<h1>Atualize o Produto</h1><hr />

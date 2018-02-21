@@ -40,3 +40,5 @@ else{
 }
 $conn->close();
 ?>
+
+<?php include "footer.php"; ?>
