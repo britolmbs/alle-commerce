@@ -44,11 +44,13 @@ session_start();
     <span class="sr-only">Proximo</span>
   </a>
 </div>
-
+</div>
+<p>&nbsp;</p>
 
 <!--fim carrocel-->
 
-<div class="row">
+<div class="container">
+<div class="row"> 
 
  
  <?php 
@@ -59,17 +61,17 @@ if($result->num_rows>0){
 	while($row = $result->fetch_assoc()){
 		?>
 
-
 <p>&nbsp;</p>
-<div class="card col-md-3">
-  <img class="produto card-img-top" src="img/produtos/<?php echo $row['foto']; ?>" alt="Card image cap"></p>
+
+<div class="card col-md-3 col-lg-3">
+  <img class="produto card-img-top" src="img/produtos/<?php echo $row['foto']; ?>" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title"><?php echo $row['nome']; ?></h5>
     <p class="card-text h6">R$: <?php echo $row['preco']; ?></p>
     <a href="produto.php?id=<?php echo $row['id'];?>" class="btn btn-secondary">Ver mais</a>
     </div>
-  </div>
-  </div>
+    </div>
+   
 
 
 
@@ -81,11 +83,13 @@ else{
 }
 $conn->close();
  ?>
-</div>
-</div>
 
+
+ </div>
+    </div>
 
  </section>
+
 
 <?php include "footer.php"; ?>
 
