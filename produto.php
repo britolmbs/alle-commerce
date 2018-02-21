@@ -21,12 +21,14 @@ if($result->num_rows>0){
 		<img src=img/produtos/<?php echo $row['foto'];?>>
 		<div class='card-body text-center'>
 		<p class="h5"> Nome: <?php echo $row['nome'];?></p>
-		<p>Descrição:<?php echo $row['descricao'];?></p>
+		<p class="h6">Descrição:<?php echo $row['descricao'];?></p>
 		<p class='h5'>Preço: <?php echo $row['preco'];?></p>
 		 <a href="#" class="btn btn-dark">Comprar</a>
 		</div>
 		</div>
 		</center>
+		</div>
+		</div>
 	
 
 <?php
