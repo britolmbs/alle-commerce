@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 21-Fev-2018 às 14:26
+-- Generation Time: 21-Fev-2018 às 22:56
 -- Versão do servidor: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -38,7 +38,8 @@ CREATE TABLE `cliente` (
   `bairro` varchar(255) COLLATE utf8_bin NOT NULL,
   `cidade` varchar(255) COLLATE utf8_bin NOT NULL,
   `cep` varchar(8) COLLATE utf8_bin NOT NULL,
-  `senha` varchar(12) COLLATE utf8_bin NOT NULL
+  `senha` varchar(12) COLLATE utf8_bin NOT NULL,
+  `foto` varchar(255) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
