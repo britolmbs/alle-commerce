@@ -19,6 +19,7 @@ if($conn->query($sql) === TRUE){
  <div class="container">
  <p class="h3 text-center">Produto Cadastrado com Sucesso!</p>
  <a href="cadprod.php" class="btn btn-secondary">Voltar</a>
+ <a href="perfilfunc.php" class="btn btn-secondary">Perfil</a>
  	
  </div>
  </section>

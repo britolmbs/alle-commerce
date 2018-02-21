@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 18-Fev-2018 às 13:18
+-- Generation Time: 21-Fev-2018 às 14:26
 -- Versão do servidor: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -44,6 +44,25 @@ CREATE TABLE `cliente` (
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `funcionario`
+--
+
+CREATE TABLE `funcionario` (
+  `id` int(2) NOT NULL,
+  `nome` varchar(255) COLLATE utf8_bin NOT NULL,
+  `cpf` varchar(11) COLLATE utf8_bin NOT NULL,
+  `telefone` varchar(11) COLLATE utf8_bin NOT NULL,
+  `endereco` varchar(255) COLLATE utf8_bin NOT NULL,
+  `bairro` varchar(255) COLLATE utf8_bin NOT NULL,
+  `cep` varchar(8) COLLATE utf8_bin NOT NULL,
+  `cargo` varchar(255) COLLATE utf8_bin NOT NULL,
+  `senha` varchar(255) COLLATE utf8_bin NOT NULL,
+  `foto` varchar(255) COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `produto`
 --
 
@@ -68,6 +87,12 @@ ALTER TABLE `cliente`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `funcionario`
+--
+ALTER TABLE `funcionario`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `produto`
 --
 ALTER TABLE `produto`
@@ -81,6 +106,12 @@ ALTER TABLE `produto`
 -- AUTO_INCREMENT for table `cliente`
 --
 ALTER TABLE `cliente`
+  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `funcionario`
+--
+ALTER TABLE `funcionario`
   MODIFY `id` int(2) NOT NULL AUTO_INCREMENT;
 
 --

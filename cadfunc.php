@@ -8,16 +8,11 @@ include "conexao.php"
 
 <p>&nbsp;</p>
 
-<h1>Cadastre-se</h1><hr />
-		<form method="POST" action="insert.php">
+<h1>Cadastro do Funcionário</h1><hr />
+		<form method="POST" action="insertfunc.php">
 		<div class="form-group">
 			<label for="nome">Nome: </label>
 			<input type="text" name="nome" class="form-control form-control-lg" />
-		</div>
-
-		<div class="form-group">
-			<label for="email">Email </label>
-			<input type="email" name="email" class="form-control form-control-lg" />
 		</div>
 
 		<div class="form-group">
@@ -37,17 +32,20 @@ include "conexao.php"
 		<input type="text" name="bairro" class="form-control form-control-lg" />
 
 		<div class="form-group">
-			<label for="cidade">Cidade: </label>
-		<input type="text" name="cidade" class="form-control form-control-lg" />
-
-		<div class="form-group">
 			<label for="cep">CEP: </label>
 		<input type="text" name="cep" class="form-control form-control-lg" />
 
 		<div class="form-group">
-			<label for="senha">Senha: </label>
-		<input type="password" name="senha" class="form-control form-control-lg" />
+			<label for="cargo">Cargo: </label>
+		<input type="text" name="cargo" class="form-control form-control-lg" />
 
+		<div class="form-group">
+			<label for="senha">senha: </label>
+		<input type="password" name="senha" class="form-control form-control-lg" />
+		</div>
+		<div class="form-group">
+			<label for="exampleFormControlFile1">Foto: </label>
+		<input type="file" name="foto" class="form-control-file" id="exampleFormControlFile1" />
 		</div>
 			<button type="submit" class="btn btn-secondary btn-lg">Enviar</button>
 			
