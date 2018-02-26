@@ -55,7 +55,7 @@ session_start();
 
  
  <?php 
-$sql = "SELECT * FROM produto order by id desc limit 6";
+$sql = "SELECT * FROM produto order by id desc limit 3";
 $result = $conn->query($sql);
 
 if($result->num_rows>0){
