@@ -20,7 +20,7 @@
 
 <div class="row">
 <div class="col-md-3">
-	<img class="img" src="img/banner.jpg">
+	<img class="img" src="img/banneri.jpg">
 </div>
 <div class="col-md-5">
 			<form method="POST" action="busca.php" >
@@ -56,7 +56,7 @@
          <li class="nav-item">
          <a class="nav-link" href="categoria.php?cat=roupa">Roupas</a></li>
           <li class="nav-item">
-          <a class="nav-link" href="categoria.php?cat=eletronico">Eletrônicos</a></li>
+          <a class="nav-link" href="categoria.php?cat=eletronico">Eletrodomésticos</a></li>
            <li class="nav-item">
            <a class="nav-link" href="categoria.php?cat=game">Games</a></li>
             <li class="nav-item">

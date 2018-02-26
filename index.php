@@ -44,17 +44,18 @@ session_start();
     <span class="sr-only">Proximo</span>
   </a>
 </div>
-</div>
+
+
 <p>&nbsp;</p>
 
 <!--fim carrocel-->
 
-<div class="container">
+
 <div class="row"> 
 
  
  <?php 
-$sql = "SELECT * FROM produto order by id desc limit 3";
+$sql = "SELECT * FROM produto order by id desc limit 6";
 $result = $conn->query($sql);
 
 if($result->num_rows>0){
@@ -86,7 +87,7 @@ $conn->close();
 
 
  </div>
-    </div>
+   </div>
 
  </section>
 

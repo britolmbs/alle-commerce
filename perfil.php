@@ -31,7 +31,6 @@ if($result->num_rows>0){
 <div class="card">
   <div class="card-body">
     <h5 class="card-title"><?php echo $row['nome'];?></h5>
-    <img src="img/cliente/<?php echo $row['foto'];?>
     <h6 class="card-subtitle mb-2">Seja Bem Vindo ao All E-Commerce</h6>
     <p class="card-text"></p>
      <a href="fotos.php" class="card-link btn btn-secondary">Trocar Foto</a>
