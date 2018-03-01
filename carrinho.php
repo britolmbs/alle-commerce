@@ -6,12 +6,13 @@ include "header.php";
 <?php 
 
 session_start();
-
+	if($_GET['acao'] == 'add' && isset($_GET['id'])){ 
+				$_SESSION['carrinho'] = $_GET['nome']; 		
+		}
+		/*
 if(isset($_GET['acao']) && in_array($_GET['acao'], array('add', 'del', 'up'))) {
 		
-		if($_GET['acao'] == 'add' && isset($_GET['id']) && preg_match("/^[0-9]+$/", $_GET['id'])){ 
-				$_SESSION['carrinho'][$id] = $_GET['nome']; 		
-		}
+	
 		if($_GET['acao'] == 'del' && isset($_GET['id']) && preg_match("/^[0-9]+$/", $_GET['id'])){ 
 			deleteCart($_GET['id']);
 		}
@@ -26,7 +27,7 @@ if(isset($_GET['acao']) && in_array($_GET['acao'], array('add', 'del', 'up'))) {
 		} 
 		header('location: carrinho.php');
 	}
-
+*/
 
  ?>
 
@@ -57,7 +58,7 @@ if(isset($_GET['acao']) && in_array($_GET['acao'], array('add', 'del', 'up'))) {
 
 					<tr>
 						
-						<td><?php echo $_SESSION['carrinho'][0]?></td>
+						<td><?php echo $_SESSION['carrinho'];?></td>
 
 						<td>
 							<input type="text" name="prod[<?php echo $result['id']?>]" value="<?php echo $result['quantity']?>" size="1" />
