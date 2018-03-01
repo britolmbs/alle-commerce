@@ -69,6 +69,7 @@
       </nav>
       </div>
       </header>
+      <?php include "conexao.php"; ?>
 
 <!--Fim menu-->
 

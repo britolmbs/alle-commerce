@@ -23,7 +23,7 @@ if($result->num_rows>0){
 		<p class="h5"> Nome: <?php echo $row['nome'];?></p>
 		<p class="h6">Descrição:<?php echo $row['descricao'];?></p>
 		<p class='h5'>Preço: <?php echo $row['preco'];?></p>
-		 <a href="#" class="btn btn-secondary">Comprar</a>
+		 <a href="carrinho.php?acao=add&id=<?php echo $row['id']; ?>" class="btn btn-secondary">Comprar</a>
 		</div>
 		</div>
 		</div>
@@ -46,3 +46,4 @@ $conn->close();
 <?php 
 include "footer.php";
  ?>
+
