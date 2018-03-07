@@ -31,8 +31,9 @@
      </form>
 </div>
 <div class="col-md-3">
-	<a class="btn btn-info" href="cadastro.php">Cadastre-se aqui</a>
-	<a class="btn btn-info" href="login.php">Login</a>
+	<a class="botao" href="cadastro.php">Cadastre-se aqui</a>
+	<a class="botao" href="login.php">Login</a>
+  <a class="botao" href="carrinho.php">Carrinho </a>
 </div>
 </div>
 </div>
@@ -69,7 +70,12 @@
       </nav>
       </div>
       </header>
-      <?php include "conexao.php"; ?>
+        <?php
+              session_start();
+              include "conexao.php";
+           
+        
+            ?>
 
 <!--Fim menu-->
 

@@ -16,10 +16,8 @@ function deleteCart($id) {
 }
 function updateCart($id, $quantity) {
 	if(isset($_SESSION['carrinho'][$id])){ 
-		echo $id;
 		if($quantity > 0) {
 			$_SESSION['carrinho'][$id] = $quantity;
-			echo $_SESSION['carrinho'][$id];
 		} else {
 		 	deleteCart($id);
 		}
@@ -39,7 +37,7 @@ function getContentCart($pdo) {
 							  'name' => $product['nome'],
 							  'price' => $product['preco'],
 							  'quantity' => $cart[$product['id']],
-							  'subtotal' => $cart[$product['id']] * $product['preco'] * 1000
+							   'subtotal' => $cart[$product['id']] * $product['preco']
 						);
 		}
 	}

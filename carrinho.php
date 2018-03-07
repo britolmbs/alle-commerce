@@ -2,7 +2,9 @@
 	include "header.php";
 	include "car.php";
 	include "product.php";
-	
+
+
+
 	$pdoConnection = require_once "connection.php";
 
 	if(isset($_GET['acao']) && in_array($_GET['acao'], array('add', 'del', 'up'))) {
@@ -18,6 +20,7 @@
 				foreach($_POST['prod'] as $id => $qtd){
 						updateCart($id, $qtd);
 				}
+
 			}
 		} 
 		//header('location: carrinho.php');
@@ -25,6 +28,14 @@
 	$resultsCarts = getContentCart($pdoConnection);
 	$totalCarts  = getTotalCart($pdoConnection);
 ?>
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>E-commerce</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+ 
+</head>
 <body>
 	<div class="container">
 		<div class="card mt-5">
@@ -66,7 +77,7 @@
 				<?php endforeach;?>
 				 <tr>
 				 	<td colspan="3" class="text-right"><b>Total: </b></td>
-				 	<td>R$<?php echo number_format($totalCarts, 2, ',', '.')?></td>
+				 	<td>R$<?php echo $totalCarts?></td>
 				 	<td></td>
 				 </tr>
 				</tbody>
