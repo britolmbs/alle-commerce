@@ -37,6 +37,7 @@ if($result->num_rows>0){
     <a href="entrega.php?id=<?php echo $row['id'];?>" class="card-link btn btn-secondary">Mudar Local de entrega</a>
     <a href="index.php" class="card-link btn btn-secondary">Compras</a>
     <a href="status.php" class="card-link btn btn-secondary">Status do Pedido</a>
+    <a href="carrinho.php" class="card-link btn btn-secondary">Carrinho</a>
   </div>
 </div>
 </div>
