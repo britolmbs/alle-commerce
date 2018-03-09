@@ -2,6 +2,10 @@
 	include "header.php";
 	include "car.php";
 	include "product.php";
+session_start();
+//if ($_SESSION['logado'] != 1) {
+ // HEADER('location: login.php');
+//}
 
 
 
@@ -86,7 +90,7 @@
 
 			<a class="btn btn-secondary" href="index.php">Continuar Comprando</a>
 			<button class="btn btn-secondary " type="submit">Atualizar Carrinho</button>
-			<a class="btn btn-secondary" href="compra.php">Confirmar compra</a>
+			<a class="btn btn-secondary" href="compra.php?id=<?php echo $result['id']; ?>">Confirmar compra</a>
 
 			</form>
 	<?php endif?>

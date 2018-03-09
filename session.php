@@ -1,20 +1,16 @@
+<?php session_start();
+include "header.html" ?>
+
+
+
 <?php
-session_start();
-include 'conexao.php';
-$email = $_POST['email'];
-$senha = $_POST['senha'];
-$sql = "SELECT nome FROM usuarios WHERE email='$email' and senha='$senha'";
-$result = $conn->query($sql);
-if($result->num_rows>0){
-	$_SESSION['logado'] == 1;
-	while($row = $result->fetch_assoc()){
-		
-		echo $row['nome'];
-		
-	}
+if ($_SESSION['logado'] == 1){
+ 	echo $_SESSION['email'] ;
 }
-else{
-	echo "Você não está logado, Faça o login para continuar";
+else {
+	echo "voce não esta logado";
 }
-$conn->close();
 ?>
+
+</body>
+</html>

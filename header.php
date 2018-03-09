@@ -71,7 +71,6 @@
       </div>
       </header>
         <?php
-              session_start();
               include "conexao.php";
            
         
